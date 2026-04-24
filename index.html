@@ -430,7 +430,7 @@
       if (res.status === "success") { alert("完了！"); location.reload(); }
       else { throw new Error("APIエラー"); }
     } catch (e) {
-      alert("送信に失敗しました");
+ 　　  alert("エラー: " + e.message);
       btn.disabled = false; btn.innerText = "登録する";
     }
   }
