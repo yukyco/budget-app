@@ -428,7 +428,7 @@
         date: document.getElementById('date').value, imageBlobs: imageBlobs
       });
       if (res.status === "success") { alert("完了！"); location.reload(); }
-      else { throw new Error("APIエラー"); }
+else { throw new Error(JSON.stringify(res)); }
     } catch (e) {
  　　  alert("エラー: " + e.message);
       btn.disabled = false; btn.innerText = "登録する";
